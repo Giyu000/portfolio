@@ -39,7 +39,7 @@
   </style>
 </head>
 <body>
-   <div id="intro">ようこそ！</div>
+   <div id="intro">Hello!</div>
   
    <div id="main">
   <h1>portfolio</h1>
@@ -72,11 +72,11 @@
      </div>
   
   <script>
-    // 3秒後にintroを非表示、mainを表示
-    setTimeout(() => {
-      document.getElementById("intro").style.display = "none";
-      document.getElementById("main").style.display = "block";
-    }, 3000);
+    //クリックでintroを非表示、mainを表示
+    document.getElementById("intro").addEventListener("click", () => {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("main").style.display = "block";
+});
   </script>
 </body>
 </html>

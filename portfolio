@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" /> //文字化け防止
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> //スマホでもレイアウトを調整する為に必要。
+  <title>portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .work {
+      margin-bottom: 1.5em;
+      padding: 1em;
+      background: #fff;
+      border-left: 4px solid #007acc;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>portfolio</h1>
+
+  <section>
+    <h2>自己紹介</h2>
+    <p>こんにちは、フロントエンド開発を学習中の○○です。HTML / CSS / JavaScriptを中心にポートフォリオを作成しています。</p>
+  </section>
+
+  <section>
+    <h2>制作物一覧</h2>
+    <div class="work">
+      <h3>作品①：Todoリストアプリ</h3>
+      <p>シンプルなタスク管理アプリです。JavaScriptで動的にタスクを追加・削除できます。</p>
+      <a href="#">▶️ 見てみる</a>
+    </div>
+
+    <div class="work">
+      <h3>作品②：プロフィールカード</h3>
+      <p>CSSだけでデザインした自己紹介カードです。</p>
+      <a href="#">▶️ 見てみる</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ○○（あなたの名前）</p>
+  </footer>
+</body>
+</html>

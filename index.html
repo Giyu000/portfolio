@@ -4,45 +4,8 @@
   <meta charset="UTF-8" /> <!--文字化け防止-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--スマホでもレイアウトを調整する為に必要。-->
   <title>portfolio</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 2em;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      color: #333;
-    }
-     #intro {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: #333;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3em;
-      z-index: 999;
-      /*初期状態*/
-      opacity:1;
-      transition: opacity 2s ease; /*フェードアウトにかかる時間*/
-    }
-    #intro.fade-out {
-      opacity: 0;
-    }
-    #main {
-      display: none;
-      padding: 2em;
-    }
-    .work {
-      margin-bottom: 1.5em;
-      padding: 1em;
-      background: #fff;
-      border-left: 4px solid #007acc;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
    <div id="intro">Hello!</div>

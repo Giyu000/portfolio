@@ -24,6 +24,12 @@
       justify-content: center;
       font-size: 3em;
       z-index: 999;
+      /*初期状態*/
+      opacity:1;
+      transition: opacity is ease; /*フェードアウトにかかる時間*/
+    }
+    #intro.fade-out {
+      opacity: 0;
     }
     #main {
       display: none;
@@ -76,17 +82,16 @@
     document.getElementById("intro").addEventListener("click", () => {
       // document.getElementById("intro") ...introという要素(<div id="intro">クリックして開始！</div>)を取得する
       // addEventListener("click", () => { ...取得した要素にクリックリスナーを登録する
-  document.getElementById("intro").style.display = "none";
-      // 取得した要素(intro)を見えなくする
-      // .style.display = "none"; ...CSS的に見えなくするという意味
-  document.getElementById("main").style.display = "block";
-      // 取得した要素(main)を表示させる
-
-      //addEventListener 
-      //イベント（ユーザーの操作）に反応する関数を登録する
-      //"mouseover"：マウスを重ねたとき
-      //"keydown"：キーを押したとき
-      //"submit"：フォームを送信したとき
+      const intro = document.getElementById("intro");
+      const main = document.getElementById("main");
+      
+      intro.classList.add("fade-out");
+      // 1秒でintroを非表示 ⇒ mainを表示
+          setTimeout(() => {
+      intro.style.display = "none";
+      main.style.display = "block";
+    }, 1000); // 1000ms = 1秒
+      
 });
   </script>
 </body>

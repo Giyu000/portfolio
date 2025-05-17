@@ -1,4 +1,4 @@
- body {
+ 　body {
       font-family: sans-serif;
       margin: 2em;
       background-color: #f9f9f9;
@@ -6,7 +6,7 @@
     h1 {
       color: #333;
     }
-     #intro {
+     .intro {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -21,7 +21,7 @@
       opacity:1;
       transition: opacity 2s ease; /*フェードアウトにかかる時間*/
     }
-    #intro.fade-out {
+    .intro.fade-out {
       opacity: 0;
     }
     #main {

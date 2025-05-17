@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--スマホでもレイアウトを調整する為に必要。-->
   <title>portfolio</title>
   <link rel="stylesheet" href="style.css">
-  
+   <script src="app.js" defer></script>
 </head>
+
 <body>
-   <div id="intro">Hello!</div>
+   <div class=".intro">Hello!</div>
   
    <div id="main">
   <h1>portfolio</h1>
@@ -40,22 +41,5 @@
      
      </div>
   
-  <script>
-    //クリックでintroを非表示、mainを表示
-    document.getElementById("intro").addEventListener("click", () => {
-      // document.getElementById("intro") ...introという要素(<div id="intro">クリックして開始！</div>)を取得する
-      // addEventListener("click", () => { ...取得した要素にクリックリスナーを登録する
-      const intro = document.getElementById("intro");
-      const main = document.getElementById("main");
-      
-      intro.classList.add("fade-out");
-      // 1秒でintroを非表示 ⇒ mainを表示
-          setTimeout(() => {
-      intro.style.display = "none";
-      main.style.display = "block";
-    }, 1000); // 1000ms = 1秒
-      
-});
-  </script>
 </body>
 </html>

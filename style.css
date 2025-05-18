@@ -27,6 +27,8 @@ nav {
   margin: auto;
   align-items: center;
   font-weight: 550;
+  position: sticky;
+  z-index: 1;
 }
 
 .nav-links {
@@ -77,29 +79,89 @@ nav {
 #circle {
   width: 1000px;
   height: 1000px;
-  background: #ccc;
+  /* background: #ccc; */
   position: absolute;
   border-radius: 50%;
   top: 0;
   left: 0;
+  transform: rotate(0deg);
+  transition:1s;
 }
 
-.feature{
+.feature {
   position: absolute;
   color: white;
+  display: flex;
 }
 
-.feature div{
+.feature img {
+  width: 70px;
+}
+
+.feature div {
   margin-left: 20px;
 }
 
-.feature div a{
+.feature div a {
   margin-top: 8px;
 }
 
-.one{
-  display: flex;
+.one {
   top: 450px;
   right: 70px;
+
+}
+
+.two {
+  top: 100px;
+  left: 340px;
+  transform: rotate(-90deg);
+}
+
+.three {
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+}
+
+.four {
+  bottom: 150px;
+  right: 370px;
+  transform: rotate(-270deg);
+}
+
+.pc {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#upBtn {
+  cursor: pointer;
+
+}
+
+#downBtn {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 520px solid #fff;
+  border-right: 520px solid transparent;
+  border-bottom: 520px solid #fff;
+  border-left: 520px solid #fff;
 
 }

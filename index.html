@@ -1,45 +1,31 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html> <!-- !+Tab：ひな形生成 -->
+<html lang="ja"> <!-- 日本語 -->
 <head>
-  <meta charset="UTF-8" /> <!--文字化け防止-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--スマホでもレイアウトを調整する為に必要。-->
-  <title>portfolio</title>
-  <link rel="stylesheet" href="style.css">
-   <script src="app.js" defer></script>
+    <meta charset="UTF-8"> <!-- UTF-8(世界中の文字に対応) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- スマホやタブレットのレスポンシブ対応(自動的にレイアウト調整をする)に必要 -->
+    <title>portfolio</title> <!-- ブラウザのタブに表示されるタイトル -->
+    <link rel="stylesheet" href="style.css"> <!-- .cssのシートを読み込む -->   
 </head>
-
 <body>
-   <div class=".intro">Hello!</div>
-  
-   <div id="main">
-  <h1>portfolio</h1>
-
-  <section>
-    <h2>自己紹介</h2>
-    <p>こんにちは、フロントエンド開発を学習中の○○です。HTML / CSS / JavaScriptを中心にポートフォリオを作成しています。</p>
-  </section>
-
-  <section>
-    <h2>制作物一覧</h2>
-    <div class="work">
-      <h3>作品①：Todoリストアプリ</h3>
-      <p>シンプルなタスク管理アプリです。JavaScriptで動的にタスクを追加・削除できます。</p>
-      <a href="#">▶️ 見てみる</a>
+    <script src="app.js"></script> <!-- .jsを読み込み -->
+    <div class="main">
+        <nav>
+            <div class="logo-area">
+                <img src="./images/logo.png" alt="" />
+                <h2>Electoric PC</h2>
+            </div>
+        </nav>
     </div>
 
-    <div class="work">
-      <h3>作品②：プロフィールカード</h3>
-      <p>CSSだけでデザインした自己紹介カードです。</p>
-      <a href="#">▶️ 見てみる</a>
+    <div class="nav-links">
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Home</li></a>
+        </ul>
     </div>
-  </section>
 
-  
-  <footer>
-    <p>&copy; 2025 ○○（あなたの名前）</p>
-  </footer>
-     
-     </div>
-  
 </body>
 </html>

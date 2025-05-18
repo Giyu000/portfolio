@@ -11,11 +11,11 @@ upBtn.onclick = function () {
   rotateSum = rotateValue + "rotate(-90deg)";
   circle.style.transform = rotateSum;
   rotateValue = rotateSum;
-}
+};
 
 downBtn.onclick = function () {
   /* 半時計回りに９０度回転させる */
-  rotateSum = rotateValue + "rotate(+90deg)";
+  rotateSum = rotateValue + "rotate(90deg)";
   circle.style.transform = rotateSum;
   rotateValue = rotateSum;
-}
+};

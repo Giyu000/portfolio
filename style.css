@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .main {
@@ -9,10 +12,10 @@
   font-size: 1.2rem;
   width: 100vw;
   height: 100vh;
-  position: relative;
   /*liner-gradient:グラデーション to right:右に行くにつれて*/
   background: linear-gradient(to right, #f8f8f8, #547fff);
-  font-family: "Ubuntu", sans-serif;
+  overflow: hidden;
+  position: relative;
 }
 
 /*.ubuntu-light-italic {
@@ -24,7 +27,7 @@
 nav {
   display: flex;
   width: 80%;
-  margin: auto;
+  margin: 20px auto;
   align-items: center;
   font-weight: 550;
   position: sticky;
@@ -36,12 +39,14 @@ nav {
   text-align: right;
 }
 
-.nav-links li {
+.nav-links ul {
   list-style: none;
 }
 
 .logo-area {
+  flex-basis: 20%;
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -60,7 +65,7 @@ nav {
   font-weight: 600;
   color: #fff;
   text-decoration: none;
-  transition: 0.3rem;
+  transition: 0.3s;
 }
 
 .nav-links ul a:hover {
@@ -85,7 +90,16 @@ nav {
   top: 0;
   left: 0;
   transform: rotate(0deg);
-  transition:1s;
+  transition: 1s;
+}
+
+.control img {
+  width: 15%;
+}
+
+.control h3 {
+  color: #fff;
+  margin: 20px 0;
 }
 
 .feature {
@@ -136,6 +150,7 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  left: 27%;
 }
 
 .control {
@@ -163,5 +178,5 @@ nav {
   border-right: 520px solid transparent;
   border-bottom: 520px solid #fff;
   border-left: 520px solid #fff;
-
+  position: absolute;
 }

@@ -1,31 +1,84 @@
 <!DOCTYPE html> <!-- !+Tab：ひな形生成 -->
 <html lang="ja"> <!-- 日本語 -->
+
 <head>
     <meta charset="UTF-8"> <!-- UTF-8(世界中の文字に対応) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- スマホやタブレットのレスポンシブ対応(自動的にレイアウト調整をする)に必要 -->
     <title>portfolio</title> <!-- ブラウザのタブに表示されるタイトル -->
-    <link rel="stylesheet" href="style.css"> <!-- .cssのシートを読み込む -->   
+    <link rel="stylesheet" href="style.css"> <!-- .cssのシートを読み込む -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <script src="app.js"></script> <!-- .jsを読み込み -->
-    <div class="main">
-        <nav>
-            <div class="logo-area">
-                <img src="./images/logo.png" alt="" />
-                <h2>Electoric PC</h2>
+    <div class="main"> <!-- Webページ全体 -->
+        <nav> <!-- ナビゲーション -->
+            <div class="logo-area"> <!-- ロゴとサイト名の表示 -->
+                <img src="./images/logo.png" alt="" class="logo" /> <!-- ロゴ画像 -->
+                <h2>Electoric PC</h2> <!-- サイトタイトル-->
             </div>
-        </nav>
-    </div>
 
-    <div class="nav-links">
-        <ul>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Home</li></a>
-        </ul>
-    </div>
+
+            <div class="nav-links"> <!-- メニュー -->
+                <ul>
+                    <!-- リスト型メニュー -->
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Detail</li>
+                    </a>
+                    <a href="#">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+
+        </nav> <!-- ナビゲーション -->
+
+        <!-- infomation -->
+        <div class="infomation">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="./images/camera.png" alt="">
+                    <div>
+                    <h1>Camera</h1>
+                    <p>beautiful lens.</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="./images/processor.png" alt="">
+                    <div>
+                    <h1>Processor</h1>
+                    <p>Processor is very imprtant.</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="./images/battery.png" alt="">
+                    <div>
+                    <h1>Battery</h1>
+                    <p>Battery is Pwerfull.</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="./images/display.png" alt="">
+                    <div>
+                    <h1>Display</h1>
+                    <p>Buautiful display.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- Webページ全体 -->>
+
 
 </body>
+
 </html>

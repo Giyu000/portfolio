@@ -1,13 +1,105 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main{
-  font-size: 1.2rem; /*元のフォントサイズに対して1.2倍*/
-  width: 100vw; /**/
-  height: 100vh; /**/
-  background : linear-gradient(to right, #f8f8f8, #547fff);
+.main {
+  /*元のフォントサイズに対して1.2倍*/
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   /*liner-gradient:グラデーション to right:右に行くにつれて*/
+  background: linear-gradient(to right, #f8f8f8, #547fff);
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}*/
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  font-weight: 550;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.logo-area {
+  display: flex;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0 2rem;
+
+}
+
+.nav-links ul a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3rem;
+}
+
+.nav-links ul a:hover {
+  color: #547fff
+}
+
+.infomation {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  background: #ccc;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.feature{
+  position: absolute;
+  color: white;
+}
+
+.feature div{
+  margin-left: 20px;
+}
+
+.feature div a{
+  margin-top: 8px;
+}
+
+.one{
+  display: flex;
+  top: 450px;
+  right: 70px;
+
 }
